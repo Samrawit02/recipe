@@ -1,13 +1,15 @@
 package com.samrit.recipe;
-
-import org.junit.jupiter.api.Test;
+import org.junit.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
+
+
 @SpringBootTest
-class RecipeApplicationTests {
+public class RecipeApplicationTests {
 
     @Test
-    void contextLoads() {
+    public void contextLoads() {
     }
 
 }
+

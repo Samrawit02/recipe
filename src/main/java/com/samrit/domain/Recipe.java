@@ -1,37 +1,43 @@
-package com.samrit.domin;
-
+package com.samrit.domain;
 
 import javax.persistence.*;
 import java.util.Set;
 
-
+/**
+ * Created by jt on 6/13/17.
+ */
 @Entity
 public class Recipe {
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
+
     private String description;
     private Integer prepTime;
     private Integer cookTime;
-    private Integer serving;
+    private Integer servings;
     private String source;
     private String url;
-    private String direction;
+    private String directions;
+
     @OneToMany(cascade = CascadeType.ALL, mappedBy = "recipe")
-    private Set<Ingredient> ingredient;
-    @Enumerated(EnumType.STRING)
-    private Difficulty difficulty;
+    private Set<Ingredient> ingredients;
 
     @Lob
     private Byte[] image;
 
+    @Enumerated(value = EnumType.STRING)
+    private Difficulty difficulty;
+
     @OneToOne(cascade = CascadeType.ALL)
-    private  Notes notes;
+    private Notes notes;
 
     @ManyToMany
     @JoinTable(name = "recipe_category",
-    joinColumns = @JoinColumn(name = "recipe_id") ,inverseJoinColumns=@JoinColumn(name = "category_id"))
-    private Set< Category> category;
+        joinColumns = @JoinColumn(name = "recipe_id"),
+            inverseJoinColumns = @JoinColumn(name = "category_id"))
+    private Set<Category> categories;
 
     public Long getId() {
         return id;
@@ -65,12 +71,12 @@ public class Recipe {
         this.cookTime = cookTime;
     }
 
-    public Integer getServing() {
-        return serving;
+    public Integer getServings() {
+        return servings;
     }
 
-    public void setServing(Integer serving) {
-        this.serving = serving;
+    public void setServings(Integer servings) {
+        this.servings = servings;
     }
 
     public String getSource() {
@@ -89,12 +95,12 @@ public class Recipe {
         this.url = url;
     }
 
-    public String getDirection() {
-        return direction;
+    public String getDirections() {
+        return directions;
     }
 
-    public void setDirection(String direction) {
-        this.direction = direction;
+    public void setDirections(String directions) {
+        this.directions = directions;
     }
 
     public Byte[] getImage() {
@@ -113,19 +119,27 @@ public class Recipe {
         this.notes = notes;
     }
 
-    public Set<Ingredient> getIngredient() {
-        return ingredient;
+    public Set<Ingredient> getIngredients() {
+        return ingredients;
     }
 
-    public void setIngredient(Set<Ingredient> ingredient) {
-        this.ingredient = ingredient;
+    public void setIngredients(Set<Ingredient> ingredients) {
+        this.ingredients = ingredients;
     }
 
-    public Difficulty getDifficalt() {
+    public Difficulty getDifficulty() {
         return difficulty;
     }
 
-    public void setDifficalt(Difficulty difficulty) {
+    public void setDifficulty(Difficulty difficulty) {
         this.difficulty = difficulty;
+    }
+
+    public Set<Category> getCategories() {
+        return categories;
+    }
+
+    public void setCategories(Set<Category> categories) {
+        this.categories = categories;
     }
 }
