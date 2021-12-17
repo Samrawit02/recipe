@@ -5,16 +5,85 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1aefede1-586e-4823-90e3-1cdf797c42eb" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/samrit/commands/CategoryCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/samrit/commands/IngredientCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/samrit/commands/NotesCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/samrit/commands/RecipeCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/samrit/commands/UnitOfMeasureCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/samrit/controller/ImageController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/samrit/controller/IngredientController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/samrit/controller/RecipeController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/samrit/converters/CategoryCommandToCategory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/samrit/converters/CategoryToCategoryCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/samrit/converters/IngredientCommandToIngredient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/samrit/converters/IngredientToIngredientCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/samrit/converters/NotesCommandToNotes.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/samrit/converters/NotesToNotesCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/samrit/converters/RecipeCommandToRecipe.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/samrit/converters/RecipeToRecipeCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/samrit/converters/UnitOfMeasureCommandToUnitOfMeasure.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/samrit/converters/UnitOfMeasureToUnitOfMeasureCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/samrit/service/ImageService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/samrit/service/ImageServiceImp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/samrit/service/IngredientService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/samrit/service/IngredientServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/samrit/service/UnitOfMeasureService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/samrit/service/UnitOfMeasureServiceImp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/images/guacamole400x400.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/images/guacamole400x400WithX.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/images/tacos400x400.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/recipe/imageuploadform.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/recipe/ingredient/ingredientform.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/recipe/ingredient/list.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/recipe/ingredient/show.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/recipe/recipeform.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/recipe/show.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/samrit/controller/ImageControllerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/samrit/controller/IndexControllerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/samrit/controller/IngredientControllerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/samrit/controller/RecipeControllerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/samrit/converters/CategoryCommandToCategoryTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/samrit/converters/CategoryToCategoryCommandTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/samrit/converters/IngredientCommandToIngredientTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/samrit/converters/IngredientToIngredientCommandTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/samrit/converters/NotesCommandToNotesTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/samrit/converters/NotesToNotesCommandTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/samrit/converters/RecipeCommandToRecipeTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/samrit/converters/RecipeToRecipeCommandTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/samrit/converters/UnitOfMeasureCommandToUnitOfMeasureTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/samrit/converters/UnitOfMeasureToUnitOfMeasureCommandTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/samrit/domain/CategoryTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/samrit/repositories/UnitOfMeasureRepositoryIT.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/samrit/service/ImageServiceImpTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/samrit/service/IngredientServiceImplTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/samrit/service/RecipeServiceIT.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/samrit/service/RecipeServiceImplTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/samrit/service/UnitOfMeasureServiceImplTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/recipe.iml" beforeDir="false" afterPath="$PROJECT_DIR$/recipe.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/samrit/bootstrap/RecipeBootstrap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/samrit/bootstrap/RecipeBootstrap.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/samrit/controller/IndexController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/samrit/controller/IndexController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/samrit/domain/Category.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/samrit/domain/Category.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/samrit/domain/Difficulty.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/samrit/domain/Difficulty.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/samrit/domain/Ingredient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/samrit/domain/Ingredient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/samrit/domain/Notes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/samrit/domain/Notes.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/samrit/domain/Recipe.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/samrit/domain/Recipe.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/samrit/domain/UnitOfMeasure.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/samrit/domain/UnitOfMeasure.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/samrit/repositories/UnitOfMeasureRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/samrit/repositories/UnitOfMeasureRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/samrit/service/RecipeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/samrit/service/RecipeService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/samrit/service/RecipeServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/samrit/service/RecipeServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/samrit/recipe/RecipeApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/samrit/recipe/RecipeApplicationTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeInsightWorkspaceSettings">
+    <option name="optimizeImportsOnTheFly" value="true" />
   </component>
   <component name="CompilerWorkspaceConfiguration">
     <option name="MAKE_PROJECT_ON_SAVE" value="true" />
@@ -22,9 +91,10 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="Enum" />
+        <option value="JUnit4 Test Class" />
         <option value="Interface" />
+        <option value="HTML File" />
         <option value="Class" />
       </list>
     </option>
@@ -61,28 +131,49 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/com/samrit" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources/static" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.55645984" />
-    <property name="settings.editor.selected.configurable" value="editor.preferences.tabs" />
+    <property name="settings.editor.selected.configurable" value="reference.settings.project.maven.importing" />
   </component>
   <component name="ReaderModeSettings">
     <option name="enabled" value="false" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\samrit\Desktop\spring5\recipe\src\main\resources\static" />
+      <recent name="C:\Users\samrit\Desktop\spring5\recipe\src\test\java\com\samrit\service" />
+      <recent name="C:\Users\samrit\Desktop\spring5\recipe\src\main\resources\templates\recipe" />
       <recent name="C:\Users\samrit\Desktop\spring5\recipe\src\main\java\com\samrit" />
-      <recent name="C:\Users\samrit\Desktop\spring5\recipe\src\main\java\com\samrit\bootstrap" />
-      <recent name="C:\Users\samrit\Desktop\spring5\recipe\src\main\resources" />
+      <recent name="C:\Users\samrit\Desktop\spring5\recipe\src\test\java\com\samrit" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\samrit\Desktop\spring5\recipe\src\test\java\com\samrit\service" />
+      <recent name="C:\Users\samrit\Desktop\spring5\recipe\src\main\resources\templates\recipe" />
       <recent name="C:\Users\samrit\Desktop\spring5\recipe" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="com.samrit" />
     </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.samrit.controller" />
+      <recent name="com.samrit.repositories" />
+      <recent name="com.samrit.service" />
+      <recent name="com.samrit.domain" />
+    </key>
+  </component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="mvn install" />
+      <command value="mvn clean:clean" />
+    </option>
   </component>
   <component name="RunManager" selected="Spring Boot.RecipeApplication">
     <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
@@ -96,32 +187,73 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RecipeApplicationTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="All in recipe" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="recipe" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ImageControllerTest.renderImageFromDB" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="recipe" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.samrit.recipe.*" />
+          <option name="PATTERN" value="com.samrit.controller.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.samrit.recipe" />
-      <option name="MAIN_CLASS_NAME" value="com.samrit.recipe.RecipeApplicationTests" />
+      <option name="PACKAGE_NAME" value="com.samrit.controller" />
+      <option name="MAIN_CLASS_NAME" value="com.samrit.controller.ImageControllerTest" />
+      <option name="METHOD_NAME" value="renderImageFromDB" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ImageServiceImpTest.saveImageFile" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="recipe" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.samrit.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.samrit.service" />
+      <option name="MAIN_CLASS_NAME" value="com.samrit.service.ImageServiceImpTest" />
+      <option name="METHOD_NAME" value="saveImageFile" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UnitOfMeasureServiceImplTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="recipe" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.samrit.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.samrit.service" />
+      <option name="MAIN_CLASS_NAME" value="com.samrit.service.UnitOfMeasureServiceImplTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Spring5RecipeAppApplicationTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="UnitOfMeasureServiceImplTest.listAllUoms" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="recipe" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.samrit.recipe.*" />
+          <option name="PATTERN" value="com.samrit.service.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.samrit.recipe" />
-      <option name="MAIN_CLASS_NAME" value="com.samrit.recipe.Spring5RecipeAppApplicationTests" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="PACKAGE_NAME" value="com.samrit.service" />
+      <option name="MAIN_CLASS_NAME" value="com.samrit.service.UnitOfMeasureServiceImplTest" />
+      <option name="METHOD_NAME" value="listAllUoms" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -135,12 +267,19 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.RecipeApplicationTests" />
-        <item itemvalue="JUnit.Spring5RecipeAppApplicationTests" />
+        <item itemvalue="JUnit.ImageServiceImpTest.saveImageFile" />
+        <item itemvalue="JUnit.ImageControllerTest.renderImageFromDB" />
+        <item itemvalue="JUnit.All in recipe" />
+        <item itemvalue="JUnit.UnitOfMeasureServiceImplTest.listAllUoms" />
+        <item itemvalue="JUnit.UnitOfMeasureServiceImplTest" />
       </list>
     </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SpringRepositoriesView">
+    <option name="showModules" value="false" />
+    <option name="searchInLibraries" value="true" />
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="1aefede1-586e-4823-90e3-1cdf797c42eb" name="Default Changelist" comment="" />
@@ -157,7 +296,32 @@
       <workItem from="1638628599703" duration="298000" />
       <workItem from="1638630981401" duration="2052000" />
       <workItem from="1638698187800" duration="8857000" />
-      <workItem from="1638707343731" duration="6780000" />
+      <workItem from="1638707343731" duration="7441000" />
+      <workItem from="1638792284572" duration="687000" />
+      <workItem from="1638798505900" duration="236000" />
+      <workItem from="1638869934716" duration="2180000" />
+      <workItem from="1638872240659" duration="205000" />
+      <workItem from="1638872492098" duration="8143000" />
+      <workItem from="1638950680850" duration="12040000" />
+      <workItem from="1639029695145" duration="2864000" />
+      <workItem from="1639033042763" duration="14427000" />
+      <workItem from="1639124660154" duration="299000" />
+      <workItem from="1639128921932" duration="22034000" />
+      <workItem from="1639302616402" duration="21779000" />
+      <workItem from="1639390202255" duration="1697000" />
+      <workItem from="1639393127398" duration="472000" />
+      <workItem from="1639408311580" duration="1960000" />
+      <workItem from="1639476977608" duration="211000" />
+      <workItem from="1639478380568" duration="18933000" />
+      <workItem from="1639557329003" duration="334000" />
+      <workItem from="1639568869566" duration="3903000" />
+      <workItem from="1639581340493" duration="1808000" />
+      <workItem from="1639642795838" duration="20497000" />
+      <workItem from="1639666362666" duration="74000" />
+      <workItem from="1639666741747" duration="273000" />
+      <workItem from="1639667777443" duration="4496000" />
+      <workItem from="1639673412209" duration="247000" />
+      <workItem from="1639730287802" duration="8749000" />
     </task>
     <task id="LOCAL-00001" summary="Project initialization">
       <created>1638439527439</created>
@@ -201,7 +365,14 @@
       <option name="project" value="LOCAL" />
       <updated>1638713534050</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="using Setters">
+      <created>1638718379590</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1638718379590</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -256,8 +427,25 @@
     <MESSAGE value="creating index page" />
     <MESSAGE value="Adding jpa query methods to repository" />
     <MESSAGE value="completing Assignment for displaying list of Recipe" />
-    <option name="LAST_COMMIT_MESSAGE" value="completing Assignment for displaying list of Recipe" />
+    <MESSAGE value="using Setters" />
+    <option name="LAST_COMMIT_MESSAGE" value="using Setters" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/samrit/service/IngredientServiceImpl.java</url>
+          <line>106</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+    <pin-to-top-manager>
+      <pinned-members>
+        <PinnedItemInfo parentTag="com.samrit.controller.IngredientController" memberName="ingredientService" />
+      </pinned-members>
+    </pin-to-top-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

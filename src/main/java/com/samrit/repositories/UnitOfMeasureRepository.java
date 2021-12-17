@@ -1,6 +1,6 @@
 package com.samrit.repositories;
 
-import com.samrit.domain.Category;
+
 import com.samrit.domain.UnitOfMeasure;
 import org.springframework.data.repository.CrudRepository;
 
